@@ -64,6 +64,10 @@ export default function Home() {
               </button>
             </form>
           </div>
+          <div className="font-jost">
+            <h2 className="font-bold text-3xl mb-4">Contato</h2>
+            <p className="text-2xl">email@arka.la</p>
+          </div>
         </div>
       </section>
     </main>
