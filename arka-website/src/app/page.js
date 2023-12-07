@@ -12,6 +12,16 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <section className="flex flex-wrap w-screen">
+        <div className="w-full h-fit mx-auto px-32 pb-32">
+          <div className="mb-20 font-jost">
+            <h2 className="font-jost font-bold text-3xl mb-4">Projetos</h2>
+            <ul className="text-2xl space-y-2">
+              <li><a href="https://github.com/martimpassos/tropiiify" target="_blank" className="underline">tropiiify</a> faz isso e aquilo</li>
+            </ul>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
