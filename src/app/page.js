@@ -25,13 +25,13 @@ export default function Home() {
         <div className="w-full h-fit mx-auto px-32 pb-32">
           <div className="mb-20 font-jost">
             <h2 className="font-jost font-bold text-3xl mb-4">Projetos</h2>
-            <ul className="text-2xl space-y-2">
+            <ul className="text-2xl font-light space-y-2">
               <li><a href="https://github.com/martimpassos/tropiiify" target="_blank" className="underline">tropiiify</a> exporta projetos Tropy como coleções IIIF</li>
             </ul>
           </div>
           <div className="mb-20 font-jost">
             <h2 className="font-jost font-bold text-3xl mb-4">Pessoas</h2>
-            <ul className="text-2xl space-y-2">
+            <ul className="text-2xl font-light space-y-2">
               <li><a href="https://bruno.land/" target="_blank" className="underline">Bruno Buccalon</a> é pesquisador e designer</li>
               <li>Martim Passos é arquiteto e programador</li>
               <li>Yuri Tavares é jornalista e programador</li>
@@ -39,7 +39,7 @@ export default function Home() {
           </div>
           <div className="w-1/2 h-fit font-jost mb-20">
             <h2 className="font-bold text-3xl mb-4">Saiba mais</h2>
-            <p className="text-2xl">
+            <p className="text-2xl font-light">
               Cadastre seu e-mail para receber novidades
             </p>
             <form
@@ -66,7 +66,7 @@ export default function Home() {
           </div>
           <div className="font-jost">
             <h2 className="font-bold text-3xl mb-4">Contato</h2>
-            <p className="text-2xl">email@arka.la</p>
+            <p className="text-2xl font-light">email@arka.la</p>
           </div>
         </div>
       </section>
