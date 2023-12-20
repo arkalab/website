@@ -28,6 +28,16 @@ export default function Home() {
                 </p>
               </div>
             </section>
+            <section className="flex flex-wrap w-screen font-jost mb-10">
+              <div className="w-10/12 h-fit mb-20 mx-auto">
+                <div className="">
+                  <h2 className="font-bold text-3xl mb-4">Projetos</h2>
+                  <ul className="text-xl font-light space-y-2">
+                    <li><a href="https://github.com/martimpassos/tropiiify" target="_blank" className="underline">tropiiify</a> exporta projetos Tropy como coleções IIIF</li>
+                  </ul>
+                </div>
+              </div>
+            </section>
           </>
         ) : (
           <>
