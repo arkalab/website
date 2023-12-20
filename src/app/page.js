@@ -1,8 +1,15 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { isMobile } from 'react-device-detect';
 
 export default function Home() {
   const [email, setEmail] = useState("");
+  const [isReady, setIsReady] = useState(false);
+
+  useEffect(() => {
+    setIsReady(true);
+  }, []);
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     setEmail("");
