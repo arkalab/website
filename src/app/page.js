@@ -72,6 +72,10 @@ export default function Home() {
                   </button>
                 </form>
               </div>
+              <div className="w-10/12 h-fit mb-20 mx-auto">
+                <h2 className="font-bold text-3xl mb-4">Contato</h2>
+                <p className="text-xl font-light">email@arka.la</p>
+              </div>
             </section>
           </>
         ) : (
