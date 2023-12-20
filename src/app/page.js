@@ -20,8 +20,8 @@ export default function Home() {
       {isReady ? (
         isMobile ? (
           <>
-            <section className="w-screen h-screen">
-              <div className="absolute w-10/12 h-fit bottom-10 left-5 font-jost">
+            <section className="flex flex-col w-screen h-screen font-jost">
+              <div className="w-10/12 h-fit mx-auto mt-auto mb-28">
                 <h1 className="text-7xl font-medium mb-6">ARKA</h1>
                 <p className="text-xl font-light">
                   Somos uma consultoria especializada na gestão de acervos, desenvolvendo soluções de tecnologia e treinamentos para instituições de memória. Trabalhamos com engenharia de dados, aprendizado de máquina e aplicações web com foco em acesso aberto e engajamento online.
