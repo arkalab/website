@@ -37,6 +37,14 @@ export default function Home() {
                   </ul>
                 </div>
               </div>
+              <div className="w-10/12 h-fit mb-20 mx-auto">
+                <h2 className="font-bold text-3xl mb-4">Pessoas</h2>
+                <ul className="text-xl font-light space-y-2">
+                  <li><a href="https://bruno.land/" target="_blank" className="underline">Bruno Buccalon</a> é pesquisador e designer</li>
+                  <li>Martim Passos é arquiteto e programador</li>
+                  <li>Yuri Tavares é jornalista e programador</li>
+                </ul>
+              </div>
             </section>
           </>
         ) : (
