@@ -19,7 +19,16 @@ export default function Home() {
     <main className="w-screen">
       {isReady ? (
         isMobile ? (
-          null
+          <>
+            <section className="w-screen h-screen">
+              <div className="absolute w-10/12 h-fit bottom-10 left-5 font-jost">
+                <h1 className="text-7xl font-medium mb-6">ARKA</h1>
+                <p className="text-xl font-light">
+                  Somos uma consultoria especializada na gestão de acervos, desenvolvendo soluções de tecnologia e treinamentos para instituições de memória. Trabalhamos com engenharia de dados, aprendizado de máquina e aplicações web com foco em acesso aberto e engajamento online.
+                </p>
+              </div>
+            </section>
+          </>
         ) : (
           <>
             <section className="w-screen h-screen">
