@@ -45,6 +45,33 @@ export default function Home() {
                   <li>Yuri Tavares é jornalista e programador</li>
                 </ul>
               </div>
+              <div className="w-10/12 h-fit mb-20 mx-auto">
+                <h2 className="font-bold text-3xl mb-4">Saiba mais</h2>
+                <p className="text-xl font-light">
+                  Cadastre seu e-mail para receber novidades
+                </p>
+                <form
+                  method="post"
+                  onSubmit={handleSubmit}
+                  className="flex w-full mt-4"
+                >
+                  <input
+                    id=""
+                    name=""
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    type="email"
+                    placeholder="E-mail"
+                    className="flex w-full h-12 border-2 border-cyan-500 bg-4 p-2 outline-none rounded-r-none"
+                  />
+                  <button
+                    type="submit"
+                    className="flex h-12 bg-cyan-500 text-white my-auto place-content-center px-6 items-center"
+                  >
+                    Enviar
+                  </button>
+                </form>
+              </div>
             </section>
           </>
         ) : (
