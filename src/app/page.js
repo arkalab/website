@@ -12,12 +12,12 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="w-screen h-screen">
+    <main className="w-screen h-screen overflow-y-scroll">
       {isReady ? (
         <>
           <section id="home" className="flex flex-col w-full h-full font-jost">
             <Gradient className="absolute" />
-            <div className="absolute w-10/12 md:w-1/2 max-w-prose h-fit bottom-[15vh] ml-[8vw]">
+            <div className="absolute w-10/12 md:w-1/2 max-w-prose h-fit bottom-[20vh] ml-[8vw]">
               <h1 className="text-7xl md:text-8xl font-medium mb-6 ">ARKA</h1>
               <p className="text-xl md:text-2xl font-light">
                 Somos uma consultoria de acervos digitais, especializada em pesquisa e
