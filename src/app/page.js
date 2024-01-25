@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="w-full h-screen">
+    <main className="w-screen h-screen">
       {isReady ? (
         <>
           <section id="home" className="flex flex-col w-full h-full font-jost">
@@ -25,7 +25,7 @@ export default function Home() {
               </p>
             </div>
           </section>
-          <section className="flex flex-wrap w-screen font-jost mb-10">
+          <section className="flex flex-wrap w-full font-jost mb-10">
             <div id="o-que-fazemos" className="w-10/12 h-fit mb-20 ml-[8vw]">
               <div className="max-w-prose">
                 <h2 className="font-bold text-3xl mb-4">O que fazemos</h2>
