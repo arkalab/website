@@ -12,7 +12,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="w-screen h-screen overflow-y-scroll">
+    <main className="w-full h-screen">
       {isReady ? (
         <>
           <section id="home" className="flex flex-col w-full h-full font-jost">
