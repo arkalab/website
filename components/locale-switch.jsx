@@ -1,17 +1,20 @@
 import { Listbox, ListboxButton, ListboxOption, ListboxOptions } from '@headlessui/react'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { useRouter } from 'next/router';
 import themeConfig from '../theme.config'
 
 export default function LocaleSwitch({ className }) {
     const router = useRouter();
     const { asPath, locale } = router;
-    const { i18n } = themeConfig; // Destructure i18n from the imported configuration
+    const { i18n } = themeConfig; 
     const [selectedLanguage, setSelectedLanguage] = useState(i18n[0])
     
+    useEffect(() => {
+        const currentLanguage = i18n.find(l => l.locale === locale) || i18n[0];
+        setSelectedLanguage(currentLanguage);
+      }, [locale]);
+
     const handleLocaleChange = (language) => {
-        setSelectedLanguage(language);
-        console.log(selectedLanguage)
         router.push(asPath, asPath, { locale: language.locale });
       };
 
