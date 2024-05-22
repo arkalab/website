@@ -36,6 +36,18 @@ export default function Home() {
                 </ul>
               </div>
             </div>
+            <div id="servicos" className="w-10/12 h-fit mb-20 ml-[8vw]">
+              <div className="">
+                <h2 className="font-bold text-3xl mb-4">Serviços</h2>
+                <ul className="text-xl font-light space-y-2">
+                  <li>Estratégia e design de solução</li>
+                  <li>Captação de recursos</li>
+                  <li>Desenvolvimento de software</li>
+                  <li>Manutenção e suporte</li>
+                  <li>Treinamento e facilitação</li>
+                </ul>
+              </div>
+            </div>
             <div id="projetos" className="w-10/12 h-fit mb-20 ml-[8vw]">
               <div className="">
                 <h2 className="font-bold text-3xl mb-4">Projetos</h2>
