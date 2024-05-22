@@ -53,13 +53,6 @@ export default function Home() {
                 <li>Yuri Tavares é jornalista e programador</li>
               </ul>
             </div>
-            <div id="mailing" className="w-10/12 h-fit mb-20 ml-[8vw]">
-              <h2 className="font-bold text-3xl mb-4">Saiba mais</h2>
-              <p className="text-xl font-light">
-                Cadastre seu e-mail para receber novidades
-              </p>
-              <Form />
-            </div>
             <div id="contato" className="w-10/12 h-fit mb-20 ml-[8vw]">
               <h2 className="font-bold text-3xl mb-4">Contato</h2>
               <p className="text-xl font-light">arka@arka.la</p>
