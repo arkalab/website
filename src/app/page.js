@@ -62,7 +62,7 @@ export default function Home() {
             </div>
             <div id="contato" className="w-10/12 h-fit mb-20 ml-[8vw]">
               <h2 className="font-bold text-3xl mb-4">Contato</h2>
-              <p className="text-xl font-light">email@arka.la</p>
+              <p className="text-xl font-light">arka@arka.la</p>
             </div>
           </section>
         </>
