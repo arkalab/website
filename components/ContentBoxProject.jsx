@@ -5,6 +5,9 @@ export default function ContentBoxProject({ logo, img, name, url, description })
         <img src={logo} className="absolute left-5 bottom-5 z-10"/>
         <img src={img} className="w-full rounded-lg" />
       </div>
+      <div>
+        <p><a href={url} target="_blank" className="font-extrabold underline">{name}</a> {description}</p>
+      </div>
     </div>
   )
 }
