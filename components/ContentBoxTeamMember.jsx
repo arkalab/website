@@ -4,7 +4,7 @@ export default function ContentBoxTeamMember({ img, name, jobTitle, url }) {
       <div className="mb-4">
         <img src={img} className="w-full rounded-lg" />
       </div>
-      <div className="text-center">
+      <div className="text-lg text-center">
         {url === "" ? (
           <p className="font-extrabold">{name}</p>
         ) : (
