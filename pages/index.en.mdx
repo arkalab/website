@@ -1,4 +1,89 @@
-import Header from '../components/header'
+import Header from '../components/Header'
+import ContentBox from "../components/ContentBox"
+import MainContent from '../components/MainContent'
+import ContentBoxTitle from "../components/ContentBoxTitle"
+import ContentBoxText from "../components/ContentBoxText"
+import ContentBoxSubTitle from "../components/ContentBoxSubTitle"
+import ContentBoxCarouselTwoColumns from "../components/ContentBoxCarouselTwoColumns"
+import ContentBoxCarouselFourColumns from "../components/ContentBoxCarouselFourColumns"
+import ContentBoxTeamMember from "../components/ContentBoxTeamMember"
+import ContentBoxProject from "../components/ContentBoxProject"
+import ContentBoxPartner from "../components/ContentBoxPartner"
+import Footer from "../components/Footer"
 
 <Header>We are a <ins>**digital collections consulting firm**</ins> specialized in research and development of technical solutions for cultural heritage institutions and private collections</Header>
-
+<MainContent>
+  <ContentBox>
+    <ContentBoxTitle>Foco</ContentBoxTitle>
+    <ContentBoxCarouselTwoColumns>
+    <ContentBoxText>
+      <p>Trabalhamos com inteligência artificial e padrões abertos na digitalização, catalogação e difusão de obras de arte e documentos históricos na web</p>
+    </ContentBoxText>
+    <ContentBoxText>
+      <p><ContentBoxSubTitle>Infraestrutura IIIF</ContentBoxSubTitle> Implementação do Protocolo Internacional para Interoperabilidade de Images</p>
+      <p><ContentBoxSubTitle>Visão Computacional</ContentBoxSubTitle> Reconhecimento de imagens, classificação de conteúdo, transcrição de manuscritos, e descrição textual automática</p>
+    </ContentBoxText>
+    </ContentBoxCarouselTwoColumns>
+  </ContentBox>
+  <ContentBox>
+    <ContentBoxTitle>Equipe</ContentBoxTitle>
+    <ContentBoxCarouselFourColumns>
+      <ContentBoxTeamMember
+        img="/team_anita.png"
+        name="Anita Lucchesi"
+        jobTitle="Negócios"
+        url="https://pt.wikipedia.org/wiki/Anita_Lucchesi"
+      />
+      <ContentBoxTeamMember
+        img="/team_bruno.png"
+        name="Bruno Buccalon"
+        jobTitle="Design"
+        url="https://bruno.land"
+      />
+      <ContentBoxTeamMember
+        img="/team_martim.png"
+        name="Martim Passos"
+        jobTitle="Tecnologia"
+        url=""
+      />
+      <ContentBoxTeamMember
+        img="/team_yuri.png"
+        name="Yuri Tavares"
+        jobTitle="Tecnologia"
+        url=""
+        />
+    </ContentBoxCarouselFourColumns>
+  </ContentBox>
+  <ContentBox>
+    <ContentBoxTitle>Clientes</ContentBoxTitle>
+    <ContentBoxCarouselFourColumns>
+      <ContentBoxPartner
+        img="/partner_rice.svg"
+        url="https://www.rice.edu"
+      />
+    </ContentBoxCarouselFourColumns>
+  </ContentBox>
+  <ContentBox>
+    <ContentBoxTitle>Projetos</ContentBoxTitle>
+    <ContentBoxCarouselTwoColumns>
+      <ContentBoxProject
+        logo="/project_tropiiify_logo.png"
+        img="/project_tropiiify.png"
+        name="tropiiify"
+        url="https://github.com/arkalab/tropiiify"
+        description="Plugin para exportar coleções IIIF através do gerenciador de imagens Tropy"
+      />
+      <ContentBoxProject
+        logo="/project_imaginerio_logo.png"
+        img="/project_imaginerio.png"
+        name="imagineRio"
+        url="https://www.imaginerio.org"
+        description="Plataforma de mapeamento histórico da cidade do Rio de Janeiro."
+      />
+    </ContentBoxCarouselTwoColumns>
+  </ContentBox>
+</MainContent>
+<Footer>
+  <p>Arka, 2024.</p>
+  <p>arka@arka.la</p>
+</Footer>
