@@ -1,14 +1,18 @@
-import LocaleSwitch from './locale-switch'
-
 export default function Header({ children }) {
-    return <>
-        <section id="home" className="flex flex-col relative">
-            <img src="/image.png" alt="Description of image" className="w-screen h-screen object-cover" />
-            <LocaleSwitch className="absolute right-0 top-0 mr-[10vw] mt-[10vh] text-zinc-200 font-light underline"/>
-            <div className="flex items-start mx-auto bottom-[25vh] justify-center absolute left-0 right-0">
-                <img src="/logo.svg" alt="Arka logo" className="relative w-60 max-w-[40vw]"/>
-                <div className="relative max-w-[39vw] top-14 ml-6 text-white text-xl md:text-2xl font-jost">{children}</div>
-            </div>
-        </section>
-    </>
+  return (
+    <section className="flex flex-wrap flex-col w-full h-screen bg-home bg-cover bg-center font-jost text-white text-2xl sm:text-3xl sm:leading-normal">
+      <div className="absolute w-10/12 sm:w-7/12 bottom-48 left-1/2 transform -translate-x-1/2 space-y-6 sm:space-y-0">
+        <div className="flex flex-row w-full">
+          <div className="basis-1/2 sm:basis-1/5">
+            <img src="/logo.svg" alt="Arka logo" className="w-full" />
+          </div>
+          <div className="basis-1/2 sm:basis-4/5"></div>
+        </div>
+        <div className="flex flex-row w-full sm:space-x-14">
+          <div className="basis-1/5 sm:basis-1/5"></div>
+          <div className="basis-4/5 sm:basis-4/5">{children}</div>
+        </div>
+      </div>
+    </section>
+  );
 }
