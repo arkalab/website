@@ -13,6 +13,9 @@ module.exports = {
       fontFamily: {
         jost: ["Jost", "sans-serif"],
       },
+      backgroundImage: {
+        home: "url('/bg.png')",
+      },
     }
   },
   plugins: []
