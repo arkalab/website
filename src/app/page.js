@@ -1,78 +1,94 @@
-"use client";
-import { useState, useEffect } from "react";
-import Gradient from '../components/Gradient';
-import Form from '../components/Form'
+import Header from '../../components/Header'
+import ContentBox from "../../components/ContentBox"
+import MainContent from '../../components/MainContent'
+import ContentBoxTitle from "../../components/ContentBoxTitle"
+import ContentBoxText from "../../components/ContentBoxText"
+import ContentBoxSubTitle from "../../components/ContentBoxSubTitle"
+import ContentBoxCarouselTwoColumns from "../../components/ContentBoxCarouselTwoColumns"
+import ContentBoxCarouselFourColumns from "../../components/ContentBoxCarouselFourColumns"
+import ContentBoxTeamMember from "../../components/ContentBoxTeamMember"
+import ContentBoxProject from "../../components/ContentBoxProject"
+import ContentBoxPartner from "../../components/ContentBoxPartner"
+import Footer from "../../components/Footer"
 
 export default function Home() {
-  const [email, setEmail] = useState("");
-  const [isReady, setIsReady] = useState(false);
-
-  useEffect(() => {
-    setIsReady(true);
-  }, []);
-
   return (
-    <main className="w-full h-screen">
-      {isReady ? (
-        <>
-          <section id="home" className="flex flex-col w-full h-full font-jost">
-            <Gradient className="absolute" />
-            <div className="absolute w-10/12 md:w-1/2 max-w-prose h-fit bottom-[20vh] ml-[8vw]">
-              <h1 className="text-7xl md:text-8xl font-medium mb-6 ">ARKA</h1>
-              <p className="text-xl md:text-2xl font-light">
-                Somos uma consultoria de acervos digitais, especializada em pesquisa e
-                desenvolvimento de tecnologias para instituições de memória e coleções particulares.
-              </p>
-            </div>
-          </section>
-          <section className="flex flex-wrap w-full font-jost mb-10">
-            <div id="o-que-fazemos" className="w-10/12 h-fit mb-20 ml-[8vw]">
-              <div className="max-w-prose">
-                <h2 className="font-bold text-3xl mb-4">O que fazemos</h2>
-                <ul className="text-xl font-light space-y-2">
-                  <li>Trabalhamos com inteligência artificial e padrões abertos como o{' '}
-                    <a href="https://iiif.io/" target="_blank" className="underline">IIIF</a>{' '}
-                    na digitalização, catalogação e difusão de obras de arte e documentos históricos na internet.</li>
-                </ul>
-              </div>
-            </div>
-            <div id="servicos" className="w-10/12 h-fit mb-20 ml-[8vw]">
-              <div className="">
-                <h2 className="font-bold text-3xl mb-4">Serviços</h2>
-                <ul className="text-xl font-light space-y-2">
-                  <li>Estratégia e design de solução</li>
-                  <li>Captação de recursos</li>
-                  <li>Desenvolvimento de software</li>
-                  <li>Manutenção e suporte</li>
-                  <li>Treinamento e facilitação</li>
-                </ul>
-              </div>
-            </div>
-            <div id="projetos" className="w-10/12 h-fit mb-20 ml-[8vw]">
-              <div className="">
-                <h2 className="font-bold text-3xl mb-4">Projetos</h2>
-                <ul className="text-xl font-light space-y-2">
-                  <li><a href="https://github.com/martimpassos/tropiiify" target="_blank" className="underline">tropiiify</a> exporta projetos Tropy como coleções IIIF</li>
-                </ul>
-              </div>
-            </div>
-            <div id="pessoas" className="w-10/12 h-fit mb-20 ml-[8vw]">
-              <h2 className="font-bold text-3xl mb-4">Pessoas</h2>
-              <ul className="text-xl font-light space-y-2">
-                <li><a href="https://pt.wikipedia.org/wiki/Anita_Lucchesi" target="_blank" className="underline">Anita Lucchesi</a> é historiadora e pesquisadora</li>
-                <li><a href="https://bruno.land/" target="_blank" className="underline">Bruno Buccalon</a> é pesquisador e designer</li>
-                <li>Martim Passos é pesquisador e programador</li>
-                <li>Yuri Tavares é jornalista e programador</li>
-              </ul>
-            </div>
-            <div id="contato" className="w-10/12 h-fit mb-20 ml-[8vw]">
-              <h2 className="font-bold text-3xl mb-4">Contato</h2>
-              <p className="text-xl font-light">arka@arka.la</p>
-            </div>
-          </section>
-        </>
-      )
-        : (null)}
-    </main>
+    <>
+      <Header>We are a <ins><b>digital collections consulting firm</b></ins> specialized in research and development for cultural heritage institutions and private collectors</Header>
+      <MainContent>
+        <ContentBox>
+          <ContentBoxTitle>About</ContentBoxTitle>
+          <ContentBoxCarouselTwoColumns>
+            <ContentBoxText>
+              <p>We use AI and open standards to digitize, catalog, and share artworks and historical documents on the web</p>
+            </ContentBoxText>
+            <ContentBoxText>
+              <p><ContentBoxSubTitle>IIIF infrastructure</ContentBoxSubTitle> Implementation of the International Image Interoperability Framework</p>
+              <p><ContentBoxSubTitle>Computer Vision</ContentBoxSubTitle> Image recognition, content classification, manuscript transcription</p>
+            </ContentBoxText>
+          </ContentBoxCarouselTwoColumns>
+        </ContentBox>
+        <ContentBox>
+          <ContentBoxTitle>Team</ContentBoxTitle>
+          <ContentBoxCarouselFourColumns>
+            <ContentBoxTeamMember
+              img="/team_anita.png"
+              name="Anita Lucchesi"
+              jobTitle="Business"
+              url="https://pt.wikipedia.org/wiki/Anita_Lucchesi"
+            />
+            <ContentBoxTeamMember
+              img="/team_bruno.png"
+              name="Bruno Buccalon"
+              jobTitle="Design"
+              url="https://bruno.land"
+            />
+            <ContentBoxTeamMember
+              img="/team_martim.png"
+              name="Martim Passos"
+              jobTitle="Technology"
+              url=""
+            />
+            <ContentBoxTeamMember
+              img="/team_yuri.png"
+              name="Yuri Tavares"
+              jobTitle="Technology"
+              url=""
+            />
+          </ContentBoxCarouselFourColumns>
+        </ContentBox>
+        <ContentBox>
+          <ContentBoxTitle>Partners</ContentBoxTitle>
+          <ContentBoxCarouselFourColumns>
+            <ContentBoxPartner
+              img="/partner_rice.svg"
+              url="https://www.rice.edu"
+            />
+          </ContentBoxCarouselFourColumns>
+        </ContentBox>
+        <ContentBox>
+          <ContentBoxTitle>Projects</ContentBoxTitle>
+          <ContentBoxCarouselTwoColumns>
+            <ContentBoxProject
+              logo="/project_tropiiify_logo.png"
+              img="/project_tropiiify.png"
+              name="tropiiify"
+              url="https://github.com/arkalab/tropiiify"
+              description="Tropy plugin for exporting IIIF collections"
+            />
+            <ContentBoxProject
+              logo="/project_imaginerio_logo.png"
+              img="/project_imaginerio.png"
+              name="imagineRio"
+              url="https://www.imaginerio.org"
+              description="Historical mapping of Rio de Janeiro"
+            />
+          </ContentBoxCarouselTwoColumns>
+        </ContentBox>
+      </MainContent>
+      <Footer>
+        <p>arka@arka.la</p>
+      </Footer>
+    </>
   );
 }
