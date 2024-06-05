@@ -14,7 +14,7 @@ import Footer from "../../components/Footer"
 export default function Home() {
   return (
     <>
-      <Header>We are a <ins><b>digital collections consulting firm</b></ins> specialized in research and development for cultural heritage institutions and private collectors</Header>
+      <Header>We are a <ins><b>digital agency</b></ins> specialized in research and development for cultural heritage institutions and private collectors</Header>
       <MainContent>
         <ContentBox>
           <ContentBoxTitle>About</ContentBoxTitle>
@@ -27,6 +27,32 @@ export default function Home() {
               <p><ContentBoxSubTitle>Computer Vision</ContentBoxSubTitle> Image recognition, content classification, manuscript transcription</p>
             </ContentBoxText>
           </ContentBoxCarouselTwoColumns>
+        </ContentBox>
+        <ContentBox>
+          <ContentBoxTitle>Services</ContentBoxTitle>
+          <ContentBoxCarouselFourColumns>
+            <ContentBoxTeamMember
+              img="/planning.png"
+              name="Digital Strategy"
+              jobTitle="Refine Ideas"
+            />
+            <ContentBoxTeamMember
+              img="/fundraising.png"
+              name="Fundraising"
+              jobTitle="Find Resources"
+            />
+            <ContentBoxTeamMember
+              img="/software.png"
+              name="Software Development"
+              jobTitle="Build Solutions"
+            />
+            <ContentBoxTeamMember
+              img="/support.png"
+              name="Training"
+              jobTitle="Support Teams"
+            />
+            
+          </ContentBoxCarouselFourColumns>
         </ContentBox>
         <ContentBox>
           <ContentBoxTitle>Team</ContentBoxTitle>
@@ -87,7 +113,7 @@ export default function Home() {
         </ContentBox>
       </MainContent>
       <Footer>
-        <p>arka@arka.la</p>
+      <ContentBoxTitle>arka@arka.la</ContentBoxTitle>
       </Footer>
     </>
   );
