@@ -14,7 +14,7 @@ import Footer from "../../components/Footer"
 export default function Home() {
   return (
     <>
-      <Header>We are a <ins><b>digital agency</b></ins> specialized in research and development for cultural heritage institutions and private collectors</Header>
+      <Header>We are a <ins><b>digital studio</b></ins> specialized in research and development for cultural heritage institutions and private collectors</Header>
       <MainContent>
         <ContentBox>
           <ContentBoxTitle>About</ContentBoxTitle>
