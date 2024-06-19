@@ -1,0 +1,55 @@
+{
+    "HomePage": {
+        "Hero": {
+            "description": "We are a <nobreak><highlight>digital studio</highlight></nobreak> specialized in research and development for cultural heritage institutions and <nobreak>private collectors</nobreak>"
+        },
+        "About": {
+            "title": "About",
+            "description": "We use AI and open standards to digitize, catalog, and share artworks and historical documents on the web",
+            "infrastructure": {
+                "title": "IIIF infrastructure",
+                "description": "Implementation of the International Image Interoperability Framework"
+            },
+            "computer-vision": {
+                "title":"Computer Vision",
+                "description": "Object detection, content classification, manuscript transcription"
+            }
+        },
+        "Team": {
+            "Anita": {
+                "name": "Anita Lucchesi",
+                "role": "Business"
+            },
+            "Bruno": {
+                "name": "Bruno Buccalon",
+                "role": "Design"
+            },
+            "Martim": {
+                "name": "Martim Passos",
+                "role": "Technology"
+            },
+            "Yuri": {
+                "name": "Yuri Tavares",
+                "role": "Technology"
+            }
+        },
+        "Partners": {
+            "title": "Partners"
+        },
+        "Projects": {
+            "title": "Projects",
+            "tropiiify": {
+                "title": "tropiiify",
+                "description": "Tropy plugin for exporting IIIF collections"
+            },
+            "imaginerio": {
+                "title": "imagineRio",
+                "description": "Historical mapping of Rio de Janeiro"
+            }
+        }
+    },
+    "LocaleSwitcher": {
+        "label": "Change language",
+        "locale": "{locale, select, pt {Português} en {English} other {Unknown}}"
+    }
+}
