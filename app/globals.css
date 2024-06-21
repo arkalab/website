@@ -2,9 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {}
+:root {
+}
 
-body {}
+body {
+}
 
 @font-face {
   font-family: "Jost";

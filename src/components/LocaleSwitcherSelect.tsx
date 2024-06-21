@@ -1,8 +1,8 @@
-'use client';
+"use client";
 
-import { useParams } from 'next/navigation';
-import { ChangeEvent, ReactNode, useTransition } from 'react';
-import { useRouter, usePathname } from '../navigation';
+import { useParams } from "next/navigation";
+import { ChangeEvent, ReactNode, useTransition } from "react";
+import { useRouter, usePathname } from "../navigation";
 
 type Props = {
   children: ReactNode;
@@ -13,7 +13,7 @@ type Props = {
 export default function LocaleSwitcherSelect({
   children,
   defaultValue,
-  label
+  label,
 }: Props) {
   const router = useRouter();
   const [isPending, startTransition] = useTransition();
@@ -23,10 +23,7 @@ export default function LocaleSwitcherSelect({
   function onSelectChange(event: ChangeEvent<HTMLSelectElement>) {
     const nextLocale = event.target.value as "en" | "pt";
     startTransition(() => {
-      router.replace(
-        pathname,
-        { locale: nextLocale }
-      );
+      router.replace(pathname, { locale: nextLocale });
     });
   }
 

@@ -1,11 +1,9 @@
-const createNextIntlPlugin = require('next-intl/plugin');
+const createNextIntlPlugin = require("next-intl/plugin");
 const withNextIntl = createNextIntlPlugin();
 
 module.exports = withNextIntl({
-  output: 'export',
+  output: "export",
   images: {
     unoptimized: true,
   },
-})
-
-
+});

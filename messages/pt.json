@@ -1,55 +1,55 @@
 {
-    "HomePage": {
-        "Hero": {
-            "description": "Somos um <nobreak><highlight>estúdio digital</highlight></nobreak> especializado em pesquisa e desenvolvimento para instituições de memória e <nobreak>coleções particulares</nobreak>"
-        },
-        "About": {
-            "title": "Sobre",
-            "description": "Trabalhamos com inteligência artificial e padrões abertos na digitalização, catalogação e difusão de obras de arte e documentos históricos na web",
-            "infrastructure": {
-                "title": "Infraestrutura IIIF",
-                "description": "Implementação do Protocolo Internacional para Interoperabilidade de Imagens"
-            },
-            "computer-vision": {
-                "title":"Visão Computacional",
-                "description": "Detecção de objetos, classificação de conteúdo, transcrição de manuscritos"
-            }
-        },
-        "Team": {
-            "Anita": {
-                "name": "Anita Lucchesi",
-                "role": "Negócios"
-            },
-            "Bruno": {
-                "name": "Bruno Buccalon",
-                "role": "Design"
-            },
-            "Martim": {
-                "name": "Martim Passos",
-                "role": "Tecnologia"
-            },
-            "Yuri": {
-                "name": "Yuri Tavares",
-                "role": "Tecnologia"
-            }
-        },
-        "Partners": {
-            "title": "Parceiros"
-        },
-        "Projects": {
-            "title": "Projetos",
-            "tropiiify": {
-                "title": "tropiiify",
-                "description": "Plugin para exportar coleções IIIF através do gerenciador de imagens Tropy"
-            },
-            "imaginerio": {
-                "title": "imagineRio",
-                "description": "Plataforma de mapeamento histórico da cidade do Rio de Janeiro"
-            }
-        }
+  "HomePage": {
+    "Hero": {
+      "description": "Somos um <nobreak><highlight>estúdio digital</highlight></nobreak> especializado em pesquisa e desenvolvimento para instituições de memória e <nobreak>coleções particulares</nobreak>"
     },
-    "LocaleSwitcher": {
-        "label": "Mudar idioma",
-        "locale": "{locale, select, pt {Português} en {English} other {Unknown}}"
+    "About": {
+      "title": "Sobre",
+      "description": "Trabalhamos com inteligência artificial e padrões abertos na digitalização, catalogação e difusão de obras de arte e documentos históricos na web.",
+      "infrastructure": {
+        "title": "Infraestrutura IIIF",
+        "description": "Implementação do Protocolo Internacional para Interoperabilidade de Imagens"
+      },
+      "computer-vision": {
+        "title": "Visão Computacional",
+        "description": "Detecção de objetos, classificação de conteúdo, transcrição de manuscritos"
+      }
+    },
+    "Team": {
+      "Anita": {
+        "name": "Anita Lucchesi",
+        "role": "Negócios"
+      },
+      "Bruno": {
+        "name": "Bruno Buccalon",
+        "role": "Design"
+      },
+      "Martim": {
+        "name": "Martim Passos",
+        "role": "Tecnologia"
+      },
+      "Yuri": {
+        "name": "Yuri Tavares",
+        "role": "Tecnologia"
+      }
+    },
+    "Partners": {
+      "title": "Parceiros"
+    },
+    "Projects": {
+      "title": "Projetos",
+      "tropiiify": {
+        "title": "tropiiify",
+        "description": "Plugin para exportar coleções IIIF através do gerenciador de imagens Tropy"
+      },
+      "imaginerio": {
+        "title": "imagineRio",
+        "description": "Plataforma de mapeamento histórico da cidade do Rio de Janeiro"
+      }
     }
+  },
+  "LocaleSwitcher": {
+    "label": "Mudar idioma",
+    "locale": "{locale, select, pt {Português} en {English} other {Unknown}}"
+  }
 }
