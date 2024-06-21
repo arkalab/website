@@ -1,0 +1,16 @@
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+      <loc>https://arka.la</loc>
+      <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="https://arka.la/en"/>
+      <xhtml:link
+      rel="alternate"
+      hreflang="pt"
+      href="https://arka.la/pt"/>
+      <lastmod>2024-06-20T15:02:24.021Z</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1</priority>
+    </url>
+</urlset>

@@ -1,8 +1,7 @@
-'use client'
+"use client";
 
-import { redirect } from 'next/navigation';
+import { redirect } from "next/navigation";
 
 export default function RootPage() {
-  redirect('/en');
+  redirect("/en");
 }
-

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @font-face {
   font-family: "Jost";
   src: url("../support_files/fonts/Jost-Light.ttf");
