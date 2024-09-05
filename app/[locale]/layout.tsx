@@ -51,6 +51,7 @@ export const metadata = (locale: string): Metadata => {
         "libraries",
         "cultural heritage",
       ];
+      break;
     case "pt":
       description =
         "Arka é um estúdio digital especializado em coleções digitais, atuando no Brasil e em projetos internacionais";
@@ -67,6 +68,7 @@ export const metadata = (locale: string): Metadata => {
         "arquivos",
         "bibliotecas",
       ];
+      break;
     case "es":
       description =
         "Arka es un estudio digital especializado en colecciones digitales, que opera en Brasil y en el extranjero.";
@@ -83,6 +85,7 @@ export const metadata = (locale: string): Metadata => {
         "patrimonio cultural",
         "inteligencia artificial",
       ];
+      break;
   }
   return {
     description: description,
@@ -125,24 +128,24 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Corporation",
+              name: "Arka",
+              url: "https://arka.la",
+              logo: "https://avatars.githubusercontent.com/u/152537545?s=200&v=4",
+              sameAs: [
+                "https://arka.la",
+                "https://www.linkedin.com/company/arkalab",
+                "https://github.com/arkalab",
+              ],
+            }),
+          }}
+        />
       </body>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            "@context": "https://schema.org",
-            "@type": "Corporation",
-            name: "Arka",
-            url: "https://arka.la",
-            logo: "https://avatars.githubusercontent.com/u/152537545?s=200&v=4",
-            sameAs: [
-              "https://arka.la",
-              "https://www.linkedin.com/company/arkalab",
-              "https://github.com/arkalab",
-            ],
-          }),
-        }}
-      />
     </html>
   );
 }

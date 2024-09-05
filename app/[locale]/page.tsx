@@ -1,13 +1,14 @@
 // 'use client'
 import { unstable_setRequestLocale } from "next-intl/server";
 
-import Hero from "../../src/components/Hero";
-import About from "../../src/components/About";
-import Team from "../../src/components/Team";
-import Partners from "../../src/components/Partners";
-import Projects from "../../src/components/Projects";
-import MainContent from "../../src/components/MainContent";
-import Footer from "../../src/components/Footer";
+import Hero from "@components/Hero";
+import About from "@components/About";
+import Team from "@components/Team";
+import Partners from "@components/Partners";
+import Projects from "@components/Projects";
+import Services from "@components/Services";
+import MainContent from "@components/MainContent";
+import Footer from "@components/Footer";
 import Link from "next/link";
 
 export default function HomePage({ params: { locale } }) {
@@ -17,6 +18,7 @@ export default function HomePage({ params: { locale } }) {
       <Hero />
       <MainContent>
         <About />
+        <Services />
         <Team />
         <Partners />
         <Projects />

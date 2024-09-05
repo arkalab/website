@@ -1,7 +1,7 @@
-import ContentBox from "../components/ContentBox";
-import ContentBoxTitle from "../components/ContentBoxTitle";
-import ContentBoxCarouselTwoColumns from "../components/ContentBoxCarouselTwoColumns";
-import ContentBoxProject from "../components/ContentBoxProject";
+import ContentBox from "./ContentBox";
+import ContentBoxTitle from "./ContentBoxTitle";
+import ContentBoxCarouselTwoColumns from "./ContentBoxCarouselTwoColumns";
+import ContentBoxProject from "./ContentBoxProject";
 import { useTranslations } from "next-intl";
 
 export default function About() {

@@ -15,16 +15,16 @@ export default function About() {
           <p>{t("description")}</p>
         </ContentBoxText>
         <ContentBoxText>
-          <p>
+          <div>
             <ContentBoxSubTitle>{t("infrastructure.title")}</ContentBoxSubTitle>
             {t("infrastructure.description")}
-          </p>
-          <p>
+          </div>
+          <div>
             <ContentBoxSubTitle>
               {t("computer-vision.title")}
             </ContentBoxSubTitle>
             {t("computer-vision.description")}
-          </p>
+          </div>
         </ContentBoxText>
       </ContentBoxCarouselTwoColumns>
     </ContentBox>

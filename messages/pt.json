@@ -46,6 +46,25 @@
         "title": "imagineRio",
         "description": "Plataforma de mapeamento histórico da cidade do Rio de Janeiro"
       }
+    },
+    "Services": {
+      "title": "Serviços",
+      "fundraising": {
+        "title": "Captação",
+        "description": "Capte recursos"
+      },
+      "planning": {
+        "title": "Estratégia digital",
+        "description": "Refine ideias"
+      },
+      "software": {
+        "title": "Desenvolvimento de software",
+        "description": "Construa soluções"
+      },
+      "support": {
+        "title": "Treinamento",
+        "description": "Capacite equipes"
+      }
     }
   },
   "LocaleSwitcher": {

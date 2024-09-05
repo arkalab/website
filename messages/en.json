@@ -46,6 +46,25 @@
         "title": "imagineRio",
         "description": "Historical mapping of Rio de Janeiro"
       }
+    },
+    "Services": {
+      "title": "Services",
+      "fundraising": {
+        "title": "Fundraising",
+        "description": "Find Resources"
+      },
+      "planning": {
+        "title": "Digital Strategy",
+        "description": "Refine ideas"
+      },
+      "software": {
+        "title": "Software Development",
+        "description": "Build Solutions"
+      },
+      "support": {
+        "title": "Training",
+        "description": "Support Teams"
+      }
     }
   },
   "LocaleSwitcher": {
