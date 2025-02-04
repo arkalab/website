@@ -14,7 +14,7 @@ module.exports = {
         jost: ["Jost", "sans-serif"],
       },
       backgroundImage: {
-        home: "url('/bg.png')",
+        home: "url('/bg-compressed.png')",
       },
     },
   },
