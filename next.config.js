@@ -3,7 +3,6 @@ const withNextIntl = createNextIntlPlugin();
 
 module.exports = withNextIntl({
   output: "export",
-  basePath: '/website',
   images: {
     unoptimized: true,
   },
