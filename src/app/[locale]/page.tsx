@@ -4,7 +4,6 @@ import { unstable_setRequestLocale } from "next-intl/server";
 import Hero from "@components/Hero";
 import About from "@components/About";
 import Team from "@components/Team";
-import Partners from "@components/Partners";
 import Projects from "@components/Projects";
 import Services from "@components/Services";
 import MainContent from "@components/MainContent";
@@ -20,7 +19,6 @@ export default function HomePage({ params: { locale } }) {
         <About />
         <Services />
         <Team />
-        <Partners />
         <Projects />
       </MainContent>
       <Footer>
