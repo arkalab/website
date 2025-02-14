@@ -116,10 +116,9 @@ export async function generateStaticParams() {
   return ["en", "pt"].map((locale) => ({ locale }));
 }
 
-export default async function RootLayout({
-  children,
-  params: { locale },
-}: Props) {
+export default async function RootLayout({ children, params }) {
+  const { locale } = await params;
+  
   unstable_setRequestLocale(locale);
   const messages = await getMessages(locale);
   return (

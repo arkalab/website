@@ -10,7 +10,9 @@ import MainContent from "@components/MainContent";
 import Footer from "@components/Footer";
 import Link from "next/link";
 
-export default function HomePage({ params: { locale } }) {
+export default async function HomePage({ params }) {
+  const { locale } = await params;
+
   unstable_setRequestLocale(locale);
   return (
     <>
