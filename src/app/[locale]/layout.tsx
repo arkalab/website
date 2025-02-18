@@ -4,6 +4,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
 import { Metadata } from "next";
 import "../globals.css";
+import { GoogleAnalytics } from '@next/third-parties/google';
 
 type Props = {
   children: ReactNode;
@@ -127,6 +128,7 @@ export default async function RootLayout({ children, params }) {
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
         </NextIntlClientProvider>
+        <GoogleAnalytics gaId="G-KRM0CXEF89" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
