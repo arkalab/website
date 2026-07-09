@@ -32,7 +32,7 @@ export default function About() {
           img="/team_yuri.png"
           name={t("Yuri.name")}
           jobTitle={t("Yuri.role")}
-          url=""
+          url="https://vstgio.com"
         />
       </ContentBoxCarouselFourColumns>
     </ContentBox>
