@@ -45,6 +45,14 @@
       "imaginerio": {
         "title": "imagineRio",
         "description": "Historical mapping of Rio de Janeiro"
+      },
+      "google": {
+        "title": "The Most Beautiful Goal Never Seen",
+        "description": ""
+      },
+      "michelChiha": {
+        "title": "Michel Chiha's Constitutional Papers",
+        "description": ""
       }
     },
     "Services": {

@@ -11,6 +11,19 @@ export default function About() {
       <ContentBoxTitle>{t("title")}</ContentBoxTitle>
       <ContentBoxCarouselTwoColumns>
         <ContentBoxProject
+          img="/project_google.png"
+          name={t("google.title")}
+          url="https://www1.folha.uol.com.br/esporte/2026/06/google-recria-com-ia-o-gol-mais-bonito-de-pele-na-javari-que-nao-foi-filmado.shtml"
+          description={t("google.description")}
+        />
+        <ContentBoxProject
+          img="/project_michel_chiha.webp"
+          video="/project_michel_chiha"
+          name={t("michelChiha.title")}
+          url="https://constitution.michelchiha.org/"
+          description={t("michelChiha.description")}
+        />
+        <ContentBoxProject
           logo="/project_tropiiify_logo.png"
           img="/project_tropiiify.png"
           name={t("tropiiify.title")}
@@ -20,6 +33,7 @@ export default function About() {
         <ContentBoxProject
           logo="/project_imaginerio_logo.png"
           img="/project_imaginerio.png"
+          video="/project_imaginerio"
           name={t("imaginerio.title")}
           url="https://www.imaginerio.org"
           description={t("imaginerio.description")}
