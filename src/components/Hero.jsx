@@ -23,7 +23,7 @@ export default function Hero() {
           </p>
         </div>
         <img
-          src="/bg.png"
+          src="/bg.webp"
           alt="Background image"
           width="2880"
           height="2052"
