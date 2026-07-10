@@ -2,12 +2,19 @@ import ContentBox from "./ContentBox";
 import ContentBoxTitle from "./ContentBoxTitle";
 import ContentBoxCarouselTwoColumns from "./ContentBoxCarouselTwoColumns";
 import ContentBoxProject from "./ContentBoxProject";
+import Globe from "./Globe";
 import { useTranslations } from "next-intl";
 
 export default function About() {
   const t = useTranslations("HomePage.Projects");
   return (
     <ContentBox>
+      <div className="mt-16 mb-8 flex flex-col items-center gap-10 sm:flex-row sm:justify-center">
+        <Globe />
+        <p className="text-center text-xl font-extrabold sm:text-left">
+          {t("clients")}
+        </p>
+      </div>
       <ContentBoxTitle>{t("title")}</ContentBoxTitle>
       <ContentBoxCarouselTwoColumns>
         <ContentBoxProject

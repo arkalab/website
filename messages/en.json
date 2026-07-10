@@ -38,6 +38,14 @@
     },
     "Projects": {
       "title": "Projects",
+      "clients": "Based in Brazil, working globally",
+      "countries": {
+        "br": "Brazil",
+        "us": "United States",
+        "ge": "Germany",
+        "ch": "Switzerland",
+        "lb": "Lebanon"
+      },
       "tropiiify": {
         "title": "tropiiify",
         "description": "Tropy plugin for exporting IIIF collections"

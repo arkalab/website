@@ -38,6 +38,14 @@
     },
     "Projects": {
       "title": "Projetos",
+      "clients": "Sediados no Brasil, atuando globalmente",
+      "countries": {
+        "br": "Brasil",
+        "us": "Estados Unidos",
+        "ge": "Alemanha",
+        "ch": "Suíça",
+        "lb": "Líbano"
+      },
       "tropiiify": {
         "title": "tropiiify",
         "description": "Plugin para exportar coleções IIIF através do gerenciador de imagens Tropy"

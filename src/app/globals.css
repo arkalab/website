@@ -35,3 +35,23 @@ body {
   font-weight: 700;
   font-style: bold;
 }
+
+@layer components {
+  .marker-label {
+    position: absolute;
+    transform: translate(-50%, calc(-100% - 8px));
+    padding: 0.25rem 0.5rem;
+    background: #1a1a1a;
+    color: #fff;
+    font-size: 0.75rem;
+    border-radius: 4px;
+    white-space: nowrap;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .marker-label-below {
+    transform: translate(-50%, 8px);
+  }
+}
