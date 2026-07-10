@@ -9,10 +9,16 @@ export default function About() {
   const t = useTranslations("HomePage.Projects");
   return (
     <ContentBox>
-      <div className="mt-16 mb-8 flex flex-col items-center gap-10 sm:flex-row sm:justify-center">
+      <div className="mt-16 mb-24 flex flex-col items-center gap-1 sm:mb-8 sm:flex-row sm:justify-between sm:gap-6">
+        <p className="hidden text-xl font-extrabold sm:block">
+          {t("clientsBased")}
+        </p>
         <Globe />
-        <p className="text-center text-xl font-extrabold sm:text-left">
+        <p className="text-center text-xl font-extrabold sm:hidden">
           {t("clients")}
+        </p>
+        <p className="hidden text-xl font-extrabold sm:block sm:text-right">
+          {t("clientsGlobal")}
         </p>
       </div>
       <ContentBoxTitle>{t("title")}</ContentBoxTitle>

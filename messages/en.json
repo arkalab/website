@@ -39,6 +39,8 @@
     "Projects": {
       "title": "Projects",
       "clients": "Based in Brazil, working globally",
+      "clientsBased": "Based in Brazil",
+      "clientsGlobal": "Working globally",
       "countries": {
         "br": "Brazil",
         "us": "United States",
