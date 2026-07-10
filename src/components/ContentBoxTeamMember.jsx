@@ -10,7 +10,7 @@ export default function ContentBoxTeamMember({ img, name, jobTitle, url }) {
 
   return (
     <div>
-      {url === "" ? (
+      {!url ? (
         <>
           {photo}
           <div className="text-lg text-center">
