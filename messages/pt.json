@@ -55,6 +55,10 @@
       "imaginerio": {
         "title": "imagineRio",
         "description": "Plataforma de mapeamento histórico da cidade do Rio de Janeiro"
+      },
+      "google": {
+        "title": "Google DeepMind",
+        "description": "The Most Beautiful Goal Never Seen"
       }
     },
     "Services": {

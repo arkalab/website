@@ -24,6 +24,13 @@ export default function About() {
       <ContentBoxTitle>{t("title")}</ContentBoxTitle>
       <ContentBoxCarouselTwoColumns>
         <ContentBoxProject
+          img="/project_google.webp"
+          video="/project_google"
+          name={t("google.title")}
+          url="https://www.youtube.com/watch?v=R-Yqes8AotY"
+          description={t("google.description")}
+        />
+        <ContentBoxProject
           logo="/project_tropiiify_logo.png"
           img="/project_tropiiify.png"
           name={t("tropiiify.title")}
